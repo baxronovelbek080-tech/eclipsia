@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECLIPSIA | Minecraft Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div class="background"></div>
+<div class="stars"></div>
+
+<header>
+    <a href="#home" class="logo">ECLIPSIA<span>.</span></a>
+
+    <nav>
+        <a href="#home">BOSH SAHIFA</a>
+        <a href="#donate">DONATE</a>
+        <a href="#shop">DO‘KON</a>
+        <a href="#top">TOP</a>
+        <a href="#server">SERVER</a>
+    </nav>
+
+    <a class="instagram" href="https://instagram.com/eclipsia.uz" target="_blank">
+        INSTAGRAM ↗
+    </a>
+</header>
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+        <div class="tag">✦ MINECRAFT NETWORK</div>
+
+        <h1>WELCOME TO<br><span>ECLIPSIA</span></h1>
+
+        <p>
+            Bu oddiy server emas. Bu yangi dunyo,
+            yangi sarguzasht va yangi imkoniyatlar!
+        </p>
+
+        <div class="buttons">
+            <a href="#server" class="main-btn">SERVERGA KIRISH ↗</a>
+            <a href="#donate" class="outline-btn">DONATE SHOP</a>
+        </div>
+
+        <div class="server-status">
+            <span class="status-dot"></span>
+            MINECRAFT SERVER
+        </div>
+    </div>
+
+    <div class="portal-scene">
+        <div class="portal-shadow"></div>
+        <div class="portal">
+            <div class="portal-center">✦</div>
+        </div>
+        <div class="cube cube1">◆</div>
+        <div class="cube cube2">✧</div>
+        <div class="cube cube3">◆</div>
+    </div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="features">
+    <div class="feature">
+        <div>⚔️</div>
+        <h3>PVP BATTLES</h3>
+        <p>Janglarda g‘alaba qozon!</p>
+    </div>
+
+    <div class="feature">
+        <div>💎</div>
+        <h3>DONATE RANKS</h3>
+        <p>O‘zingga mos rankni tanla!</p>
+    </div>
+
+    <div class="feature">
+        <div>🌌</div>
+        <h3>NEW WORLD</h3>
+        <p>Yangi dunyoni kashf et!</p>
+    </div>
+
+    <div class="feature">
+        <div>🏆</div>
+        <h3>TOP PLAYERS</h3>
+        <p>Eng kuchli o‘yinchi bo‘l!</p>
+    </div>
+</section>
+
+<!-- DONATE -->
+
+<section class="section" id="donate">
+
+    <div class="heading">
+        <span>CHOOSE YOUR POWER</span>
+        <h2>DONATE <b>RANKS</b></h2>
+        <p>O‘zingga yoqqan rankni tanla va Eclipsia olamida ajralib tur!</p>
+    </div>
+
+    <div class="rank-grid" id="rankGrid"></div>
+
+</section>
+
+<!-- SHOP -->
+
+<section class="section shop-section" id="shop">
+
+    <div class="heading">
+        <span>ECLIPSIA MARKET</span>
+        <h2>ITEM <b>SHOP</b></h2>
+        <p>Maxsus buyumlar do‘koni</p>
+    </div>
+
+    <div class="shop-grid">
+
+        <div class="shop-card">
+            <div class="item-icon">💎</div>
+            <h3>DIAMOND PACK</h3>
+            <p>10 000 so‘m</p>
+            <button onclick="buyItem('DIAMOND PACK',10000)">SOTIB OLISH</button>
+        </div>
+
+        <div class="shop-card">
+            <div class="item-icon">⚔️</div>
+            <h3>PVP KIT</h3>
+            <p>20 000 so‘m</p>
+            <button onclick="buyItem('PVP KIT',20000)">SOTIB OLISH</button>
+        </div>
+
+        <div class="shop-card">
+            <div class="item-icon">🛡️</div>
+            <h3>ARMOR PACK</h3>
+            <p>25 000 so‘m</p>
+            <button onclick="buyItem('ARMOR PACK',25000)">SOTIB OLISH</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- TOP PLAYERS -->
+
+<section class="section" id="top">
+
+    <div class="heading">
+        <span>THE BEST PLAYERS</span>
+        <h2>TOP <b>PLAYERS</b></h2>
+        <p>Eclipsia serverining eng yaxshi o‘yinchilari</p>
+    </div>
+
+    <div class="leaderboard">
+        <div class="player first">
+            <span>🥇 #1</span>
+            <strong>Player_One</strong>
+            <b>1000 XP</b>
+        </div>
+
+        <div class="player">
+            <span>🥈 #2</span>
+            <strong>Player_Two</strong>
+            <b>850 XP</b>
+        </div>
+
+        <div class="player">
+            <span>🥉 #3</span>
+            <strong>Player_Three</strong>
+            <b>700 XP</b>
+        </div>
+    </div>
+
+    <p class="demo-note">Bu reyting hozircha namuna ma'lumotlardan iborat.</p>
+
+</section>
+
+<!-- SERVER -->
+
+<section class="server-section" id="server">
+
+    <span class="tag">JOIN OUR COMMUNITY</span>
+
+    <h2>JOIN THE <b>ECLIPSIA</b></h2>
+
+    <p>Bizning Minecraft serverimizga qo‘shil!</p>
+
+    <div class="ip-box">
+        <span id="serverIP">ARTICRAFT-UZ.PLAY.HOSTING</span>
+        <button onclick="copyIP()">⧉</button>
+    </div>
+
+    <div class="version">SERVER IP • COPY AND PLAY</div>
+
+</section>
+
+<!-- INSTAGRAM -->
+
+<section class="instagram-section">
+
+    <div class="insta-icon">◎</div>
+
+    <h2>FOLLOW <b>US</b></h2>
+
+    <p>Eclipsia yangiliklari va e'lonlarini Instagramda kuzatib boring.</p>
+
+    <a href="https://instagram.com/eclipsia.uz"
+       target="_blank" class="main-btn">
+       @ECLIPSIA.UZ ↗
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    <a href="#home" class="logo">ECLIPSIA<span>.</span></a>
+
+    <p>© 2026 Eclipsia Minecraft Network</p>
+
+    <a href="https://instagram.com/eclipsia.uz" target="_blank">
+        INSTAGRAM ↗
+    </a>
+</footer>
+
+<!-- PURCHASE MODAL -->
+
+<div class="modal" id="buyModal">
+
+    <div class="modal-box">
+
+        <button class="close" onclick="closeModal()">×</button>
+
+        <span class="tag">ECLIPSIA CHECKOUT</span>
+
+        <h2>BUY <b>RANK</b></h2>
+
+        <div class="selected-product">
+            <span id="selectedName">VIP</span>
+            <strong id="selectedPrice">0 so‘m</strong>
+        </div>
+
+        <form id="orderForm">
+
+            <input type="hidden" id="product">
+            <input type="hidden" id="amount">
+
+            <label>Minecraft nickname</label>
+            <input type="text" id="nickname"
+                   placeholder="Minecraft nicknamengiz"
+                   required>
+
+            <label>To‘lov usuli</label>
+
+            <select id="payment" required>
+                <option value="">To‘lov turini tanlang</option>
+                <option value="Click">Click</option>
+                <option value="Payme">Payme</option>
+                <option value="Admin">Admin orqali</option>
+            </select>
+
+            <div id="paymentInfo"></div>
+
+            <label>To‘lov cheki (admin orqali)</label>
+
+            <input type="file" id="receipt" accept="image/*">
+
+            <button type="submit" class="main-btn submit-btn">
+                BUYURTMA YUBORISH ↗
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
